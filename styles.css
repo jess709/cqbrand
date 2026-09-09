@@ -1,4 +1,4 @@
-  :root{
+:root{
     --charcoal:#3a3a3a;
     --black:#202020;
     --gold:#fdb517;
@@ -822,4 +822,15 @@ footer::before{
 
 @media (prefers-reduced-motion: reduce){
   .btn::before{ display:none; }
+}
+
+/* ---------- EMBEDDED FORM WRAPPER (GoHighLevel iframes) ---------- */
+.form-embed-frame{
+  background: var(--white);
+  padding: 28px;
+  box-shadow: 0 20px 44px -30px rgba(32,32,32,0.4);
+}
+.form-embed-frame iframe{ display:block; }
+@media (max-width:560px){
+  .form-embed-frame{ padding:16px; }
 }
